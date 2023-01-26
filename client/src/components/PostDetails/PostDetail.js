@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { CircularProgress, Divider, Paper, Typography } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import moment from 'moment';
 
 import CommentSection from './CommentSection';
@@ -56,7 +56,7 @@ const PostDetail = () => {
           <img className={classes.media} src={post.selectedFile || 'https://user-images.githubusercontent.com/194400/49531010-48dad180-f8b1-11e8-8d89-1e61320e1d82.png'} alt={post.title} />
         </div>
       </div>
-      {recommendedPosts.length && (
+      {recommendedPosts.length>0 && (
         <div className={classes.section}>
           <Typography gutterBottom variant="h5">You might also like:</Typography>
           <Divider />

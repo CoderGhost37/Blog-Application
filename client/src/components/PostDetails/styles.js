@@ -23,6 +23,7 @@ export default makeStyles((theme) => ({
     flex: 1,
   },
   imageSection: {
+    flex: 1,
     marginLeft: '20px',
     [theme.breakpoints.down('sm')]: {
       marginLeft: 0,
@@ -56,6 +57,6 @@ export default makeStyles((theme) => ({
   commentsInnerContainer: {
     height: '200px',
     overflowY: 'auto',
-    marginRight: '30px',
+    marginRight: '20px',
   },
 }));
